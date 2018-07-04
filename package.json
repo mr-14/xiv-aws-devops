@@ -1,0 +1,15 @@
+{
+  "name": "xiv-aws-devops",
+  "description": "Provides devops utilities for AWS",
+  "version": "0.1.0",
+  "main": "index.js",
+  "author": "Mr. 14 <suke.shou@gmail.com>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:mr-14/xiv-aws-devops.git"
+  },
+  "dependencies": {
+    "aws-sdk": "^2.180.0"
+  }
+}
