@@ -83,7 +83,7 @@ class DynamoDB {
     return this._updateTable(params)
   }
 
-  async _updateIndex(tableName, expectedAttr, expectedGSIs, actualGSIs) {
+  async _updateIndex(tableName, expectedAttr, expectedGSIs = [], actualGSIs = []) {
     const { toAdd, toUpdate, toDelete } = this._getIndexDiff(expectedGSIs, actualGSIs)
 
     if (toAdd.length === 0 && toUpdate.length === 0 && toDelete.length === 0) {
