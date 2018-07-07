@@ -17,6 +17,8 @@ class DynamoDB {
           console.log(`Creating "${tableName}" table`)
           await this._createTable(params)
         }
+        
+        console.log(`Done creating "${tableName}" table`)
       } else {
         console.log(`Updating "${tableName}" table`)
 
